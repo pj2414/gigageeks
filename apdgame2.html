@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditory Storytelling Game</title>
+    <link rel="stylesheet" href="apdgame2.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Auditory Storytelling Game</h1>
+        <div id="audio-container">
+            <audio id="storyAudio" controls>
+                <source src="Adptest.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="questions-container">
+            <h3>Questions:</h3>
+            <ul id="questions-list"></ul>
+            <button onclick="checkAnswers()">Take T</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="apdgame2.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* report.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue (aqua) */
+    color: #333; /* Dark gray */
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #008080; /* Dark cyan */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #008080; /* Dark cyan */
+}
+
+input[type="text"],
+input[type="number"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #008080; /* Dark cyan */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f0f8ff; /* Light blue (aqua) */
+    color: #333; /* Dark gray */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #008080; /* Dark cyan */
+    color: #fff; /* White */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005555; /* Dark cyan (a bit darker) */
+}
+/* report.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue (aqua) */
+    color: #333; /* Dark gray */
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #008080; /* Dark cyan */
+    margin-top: 20px;
+}
+
+h2 {
+    color: #008080; /* Dark cyan */
+}
+
+/* Paragraph styles */
+p {
+    color: #333; /* Dark gray */
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+}
+
+/* Precaution styles */
+.precaution {
+    font-style: italic;
+    color: #008080; /* Dark cyan */
+}
+
+/* Reference styles */
+ul.references {
+    margin-top: 20px;
+}
+
+/* Reference item styles */
+.references li {
+    margin-bottom: 10px;
+}
+
+/* Horizontal rule styles */
+hr {
+    border: 1px solid #008080; /* Dark cyan */
+    margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.precaution{
+    text-align: center;
+    color: red;
+}

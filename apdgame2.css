@@ -1,0 +1,51 @@
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#audio-container {
+    margin-bottom: 20px;
+}
+
+#questions-container {
+    text-align: left;
+}
+
+#questions-list {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #2ecc71;
+}

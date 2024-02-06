@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Math Quiz Game</title>
+    <style>body {
+        background: url(math) no-repeat;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .quiz-container {
+        text-align: center;
+    }
+    
+    button {
+        margin-top: 10px;
+    }</style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1 id="question"></h1>
+        <input type="number" id="answer" placeholder="Your Answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        const questions = [
+    { question: "What is 5 + 3?", answer: 8 },
+    { question: "What is 12 - 7?", answer: 5 },
+    // Add more questions here...
+    { question: "What is 15 * 2?", answer: 30 },
+    { question: "What is 18 / 3?", answer: 6 },
+    { question: "what is 100 - 99?" , answer: 1 },
+    { question: "what is 7 * 7?" , answer: 49 },
+    { question: "what is 9 * 8?" , answer: 72 },
+    { question: "what is 5 / 8?" , answer: 0.62},
+    { question: "what is 0 * 1?" , answer: 0 },
+    { question: "what is 45 - 40?" , answer: 5 },
+    
+];
+
+let currentQuestionIndex = 0;
+
+function displayQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    document.getElementById("question").textContent = currentQuestion.question;
+}
+
+function checkAnswer() {
+    const userAnswer = parseInt(document.getElementById("answer").value);
+
+    if (!isNaN(userAnswer)) {
+        const currentQuestion = questions[currentQuestionIndex];
+
+        if (userAnswer === currentQuestion.answer) {
+            document.getElementById("result").textContent = "Correct!";
+        } else {
+            document.getElementById("result").textContent = "Incorrect. Try again.";
+        }
+
+        // Move to the next question or end the game
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            displayQuestion();
+        } else {
+            document.getElementById("question").textContent = "Quiz Completed!";
+        }
+
+    } else {
+        document.getElementById("result").textContent = "Please enter a valid number.";
+    }
+}
+
+// Display the first question when the page loads
+displayQuestion()
+    </script>
+</body>
+</html>
